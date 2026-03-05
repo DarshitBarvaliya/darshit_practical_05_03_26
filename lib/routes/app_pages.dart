@@ -18,9 +18,9 @@ class AppPages {
       name: Routes.HOME,
       page: () => const HomePage(),
       binding: HomeBinding(),
-      transition: Transition.fadeIn,
-      transitionDuration: const Duration(milliseconds: 800),
-      curve: Curves.easeInOut,
+      transition:
+          Transition.noTransition, // Handles its own entry via Splash slide up
+      transitionDuration: const Duration(milliseconds: 0),
     ),
   ];
 }

@@ -317,7 +317,6 @@ class HomePage extends GetView<HomeController> {
           ),
           child: Image.asset(
             icon,
-
             height: 28,
           ),
         ),
@@ -658,7 +657,8 @@ class HomePage extends GetView<HomeController> {
                             Container(
                                 height: 8,
                                 margin: const EdgeInsets.only(top: 6),
-                                color: const Color(0xFF4169E1).withOpacity(0.5)), // card strip
+                                color: const Color(0xFF4169E1)
+                                    .withOpacity(0.5)), // card strip
                             const Expanded(
                               child: Center(
                                 child: Icon(Icons.airplanemode_active,
